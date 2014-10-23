@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    
+    >
+<LinearLayout 
+    android:id="@+id/web_view_how_uninstall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView 
+        android:id="@+id/web_view_how_uninstall_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:text="How to Uninstall apps"
+        android:layout_marginBottom="5dip"
+        android:background="#00FFFF"
+        />
+    
+    <WebView 
+        android:id="@+id/web_view_uninstall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>
+
+
+<LinearLayout 
+    android:id="@+id/web_view_how_install"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView 
+        android:id="@+id/web_view_how_install_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:text="How to install apps"
+        android:layout_marginBottom="5dip"
+        android:background="#00FFFF"
+        />
+    
+    <WebView 
+        android:id="@+id/web_view_install"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>
+
+
+<LinearLayout 
+    android:id="@+id/web_view_how_update"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView 
+        android:id="@+id/web_view_how_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:text="How to Update apps"
+        android:layout_marginBottom="5dip"
+        android:background="#00FFFF"
+        />
+    
+    <WebView 
+        android:id="@+id/web_view_update"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

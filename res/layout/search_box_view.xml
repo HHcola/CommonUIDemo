@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/search_box_white" >
+
+        <EditText
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/clear_input"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:maxLength="256"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/dimen_txt_size" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/clear_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="4dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_delete_history_bg" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="55dip"
+        android:layout_height="38dip"
+        android:layout_marginLeft="8dip"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_bar_search_bg" />
+
+</LinearLayout>

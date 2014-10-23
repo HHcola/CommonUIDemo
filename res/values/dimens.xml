@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen  name="dimen_banner_height">100dip</dimen>
+	<dimen name="dimen_search_txt_size">13dip</dimen>
+	 <dimen name="dimen_txt_size">15dip</dimen>
+	 <dimen name="dimen_navigation_bar_height">53dip</dimen>
+</resources>

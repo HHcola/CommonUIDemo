@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  
+    <com.example.slider.BannerSliderView 
+        android:id="@+id/banner_slider_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_banner_height"
+        android:drawingCacheQuality="auto"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/rl_banner_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="7dip"
+        android:orientation="horizontal"
+        >
+    </RelativeLayout>
+    
+    </com.example.slider.BannerSliderView>
+    
+    <Button 
+        android:id="@+id/button_layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Button Layer"
+        android:background="@drawable/button_state"
+        />
+    <Button 
+        android:id="@+id/button_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        
+        android:background="@drawable/button_select_bg"
+        />
+
+    
+        <FrameLayout
+        android:id="@+id/btn_close_slide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="52dip"
+        android:background="#fff"
+        android:clickable="false"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="first"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            />
+        
+          <Button
+            android:id="@+id/img_arrow_down"
+            android:layout_width="36dip"
+            android:layout_height="27dip"
+            android:layout_gravity="top|right"
+            android:background="@drawable/button_select_bg" />        
+    </FrameLayout>
+</LinearLayout>

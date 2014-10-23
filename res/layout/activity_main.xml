@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+    <ScrollView 
+        android:id="@+id/main_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <LinearLayout 
+         android:id="@+id/container"
+    	 android:layout_width="wrap_content"
+    	 android:layout_height="match_parent"
+    	 android:orientation="vertical"
+            >
+    <Button 
+        android:id="@+id/round_progress_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Round Progress"
+        android:textColor="#0000FF"
+        />
+        <Button 
+        android:id="@+id/touch_test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Touch Test"
+        android:textColor="#0000FF"
+        />
+        
+        <Button 
+        android:id="@+id/banner_slider_test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Banner Slider"
+        android:textColor="#0000FF"
+        />
+        
+        
+        <Button 
+        android:id="@+id/drawable_transition"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Transition"
+        android:textColor="#0000FF"
+        />
+        
+       <Button 
+        android:id="@+id/my_custom_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Custom Draw"
+        android:textColor="#0000FF"
+        />
+       
+        <Button 
+        android:id="@+id/my_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Custom Layout"
+        android:textColor="#0000FF"
+        />
+        
+                <Button 
+        android:id="@+id/my_custom_listview"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="List view"
+        android:textColor="#0000FF"
+        />
+                
+                                <Button 
+        android:id="@+id/my_custom_fragment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="fragment List view"
+        android:textColor="#0000FF" />
+        
+        <Button 
+        android:id="@+id/my_under_line_indeator"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="underline page inderator"
+        android:textColor="#0000FF" />
+        <Button 
+        android:id="@+id/my_change_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Change BG"
+        android:textColor="#0000FF" />
+
+                <Button 
+        android:id="@+id/my_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Web View"
+        android:textColor="#0000FF" />
+
+                <Button 
+        android:id="@+id/my_web_view_single"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Single Web View"
+        android:textColor="#0000FF" />
+        <Button 
+        android:id="@+id/my_dynamic_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:text="Dynamic Change"
+        android:textColor="#0000FF" />
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+

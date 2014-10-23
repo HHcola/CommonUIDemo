@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+    <ImageView 
+        android:id="@+id/iv_background"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/scanning_bg"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView 
+            android:id="@+id/iv_progress_round_int"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scanning_round_int"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_progress_round_int"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dip"
+            android:text="Pregress Text"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip"
+            />
+        
+    </RelativeLayout>
+
+</FrameLayout>

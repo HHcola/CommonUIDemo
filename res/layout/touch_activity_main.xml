@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.commonuidemo.LayoutView1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.example.commonuidemo.LayoutView2
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+       <com.example.commonuidemo.MyTextView
+           android:id="@+id/tv"
+           android:layout_width="210dp"
+           android:layout_height="wrap_content"
+           android:background="#00FFFF"
+           android:text="AB"
+           android:textColor="#0000FF"
+           android:textSize="40sp"
+           android:textStyle="bold" />
+
+   </com.example.commonuidemo.LayoutView2>
+</com.example.commonuidemo.LayoutView1>
