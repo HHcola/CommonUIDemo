@@ -44,11 +44,14 @@ public class DynamicChangeControlsActivity extends Activity {
     private int mInstallTop;
     private int mNameTop;
     private int mNameBottom;
+    private int mDownloadSizeMarginTop;
+    private int mDownloadSizeMarginBottom;
+    private float mDownloadNumSize;
     
     // 内容view
     private DynamicScrollView mSvContent;
     
-    private static final float TOP_HEIGHT_PERCENT = 0.8F;
+    private static final float TOP_HEIGHT_PERCENT = 0.6F;
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
@@ -70,6 +73,7 @@ public class DynamicChangeControlsActivity extends Activity {
                         mLlAppTop.measure(0, 0);
                         mHeaderHeight = mLlAppTop.getMeasuredHeight();
                         mNameSize = mTvTopName.getTextSize();
+                        mDownloadNumSize = mTvTopDownloadNumSize.getTextSize();
                         mLogoSize = mFlTopLogo.getLayoutParams().height;
                         LayoutParams lp = (LayoutParams) mFlTopInstall
                                 .getLayoutParams();
@@ -80,6 +84,11 @@ public class DynamicChangeControlsActivity extends Activity {
                                 .getLayoutParams();
                         mNameTop = lpName.topMargin;
                         mNameBottom = lpName.bottomMargin;
+
+                        LayoutParams lpDownloadSize = (LayoutParams) mTvTopDownloadNumSize
+                                .getLayoutParams();
+                        mDownloadSizeMarginTop = lpDownloadSize.topMargin;
+                        mDownloadSizeMarginBottom = lpDownloadSize.bottomMargin;
 
                         mViewPretend.getLayoutParams().height = mHeaderHeight;
                         mLlAppTop.requestLayout();
@@ -129,9 +138,17 @@ public class DynamicChangeControlsActivity extends Activity {
             lpName.topMargin = (int) (mNameTop * scale);
             lpName.bottomMargin = (int) (mNameBottom * scale);
 
+            LayoutParams lpDownloadNumSize = (LayoutParams) mTvTopDownloadNumSize
+                    .getLayoutParams();
+            lpDownloadNumSize.topMargin = (int) (mDownloadSizeMarginTop * scale);
+            lpDownloadNumSize.bottomMargin = (int) (mDownloadSizeMarginBottom * scale);
+
             if (scale >= TOP_HEIGHT_PERCENT) {
                 mTvTopName.setTextSize(TypedValue.COMPLEX_UNIT_PX, mNameSize
                         * scale);
+                mTvTopDownloadNumSize.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                        mDownloadNumSize * scale);
+
                 RelativeLayout.LayoutParams layoutParams = (android.widget.RelativeLayout.LayoutParams) mFlTopLogo
                         .getLayoutParams();
                 Log.d(TAG, "logo size:" + mLogoSize * scale + " scale:"
